@@ -1,0 +1,15 @@
+Jedis的几种连接方式：
+
+单实例：        Jedis
+单实例多线程：   JedisPool + JedisPoolConfig
+
+  JedisPoolConfig:
+
+    int maxTotal
+    int maxIdle
+    int minIdle
+    boolean blockWhenExhausted
+    long maxWaitMillis
+    boolean lifo
+
+分片方式：   ShardedJedis/ShardedJedisPool/JedisShardInfo
